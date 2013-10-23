@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	#controls(class='hidden')
+		#location Your Location:
+		span#count 0
+	
+	#container(class='container')
+		#start
+			h1= title
+			input#tags(type='text')
+
+	#tweets(class='tweets')

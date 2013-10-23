@@ -1,0 +1,22 @@
+doctype 5
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.min.css')
+		script(src='/socket.io/socket.io.js')
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+		script(src!='https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA7uD4xwMhCzEUWJcVtGp9gwRFRUexVa0Y&sensor=false')
+	body
+		#nav(class='nav', data-panel='show')
+			span
+			span
+			span
+		nav
+			a.close(data-panel='hide', href='#') x
+			p
+				a(href='#', data-stream='false') Stop Streaming
+
+		block content
+		script(src='/javascripts/main.js')
